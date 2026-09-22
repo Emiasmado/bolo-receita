@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-100">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name='author' content='Walder B. Andriola'>
+	<meta name='Copyright' content='2015 - Central da Escola© - Brazil'>
+
+	<link rel='shortcut icon' type='image/x-icon' href="https://www.centraldaescola.com.br/assets/images/favicon.png">
+
+	<!-- styles -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/bootstrap-5.3.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/bs5-custom/bootstrap.min.css" />
+	<!-- Fontawesome -->
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/fontawesome-6.6.0/css/all.min.css" />
+	<!-- DataTables -->
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/datatables/v2.1.3/datatables.min.css" />
+	<!-- Toastr -->
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/Toastr/toastr.css" />
+	<!-- Select2 -->
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/select2/4.1.0/css/select2.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/select2/4.1.0/css/select2-bootstrap5.min.css" />
+
+	<!-- CSS Customs -->
+	<link rel="stylesheet" type="text/css" href="https://www.centraldaescola.com.br/assets/css/login.css?v=1781089306" />
+
+	<!-- styles -->
+
+	<title>:: CENTRAL DA ESCOLA ::</title>
+</head>
+<body class="d-flex flex-column h-100">
+
+	<section class="vh-100">
+		<!-- Conteúdo -->
+<div class="container py-5 h-100">
+	<div class="row d-flex justify-content-center align-items-center h-100">
+		<div class="col col-xl-10">
+			<div class="card" style="border-radius: 1rem;">
+				<div class="row g-0">
+					<div class="col-md-6 col-lg-6 d-none d-md-block logo-background">
+						<div class="d-flex align-items-center justify-content-center h-100">
+							<img src="https://www.centraldaescola.com.br/assets/images/logo-login.png" class="img-fluid p-4" alt="Logomarca">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 d-flex align-items-center">
+						<div class="card-body">
+							<form id="form-login" action="usuarios/login" method="post" accept-charset="utf-8" role="form">
+								<div class="d-md-none mb-3 pb-1">
+									<img src="https://www.centraldaescola.com.br/assets/images/logo-header.png" class="img-fluid" alt="Logomarca">
+								</div>
+
+								<h3 class="fw-bold">Login</h3>
+
+								
+								<div class="mb-2">
+									<label for="perfil" class="form-label">Perfil</label>
+																		<select name="perfil" id="perfil" class="form-select">
+<option value="1">Aluno</option>
+<option value="2">Responsável</option>
+<option value="3" selected="selected">Administrador</option>
+</select>
+								</div>
+								<div class="mb-2">
+									<label for="login" class="form-label">Login</label>
+									<input type="text" class="form-control" id="login" name="login" placeholder="Digite seu login" required>
+								</div>
+								<div class="mb-3">
+									<label for="senha" class="form-label">Senha</label>
+									<input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+								</div>
+																	<div class="input-group input-group-lg mt-3 mb-4">
+										<label class="input-group-text p-0" for="captcha"><img id="Imageid" src="https://www.centraldaescola.com.br/captcha/1790036717.8392.jpg" style="width: 150px; height: 38px; border: 0;" alt=" " /></label>
+										<input type="text" class="form-control" id="captcha" name="captcha" placeholder="Digite o código ao lado" required>
+									</div>
+									<input type="hidden" name="captcha_word" value="gwtx" />
+																								<button type="submit" class="btn btn-primary btn-block mb-3" id="btn-login">Entrar</button>
+								<a href="https://www.centraldaescola.com.br/usuarios/remindme">Esqueci minha senha</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Conteúdo -->	</section>
+
+	<!-- Footer -->
+	<!-- footer.php -->
+<footer class="footer mt-auto py-3 bg-body-tertiary d-print-none">
+	<div class="container-fluid">
+		<!-- <p class="float-end"><a href="#">Back to top</a></p> -->
+		<div class="row text-muted">
+			<div class="col-7 text-start">
+				<ul class="list-inline mb-0">
+										<!-- <li class="list-inline-item">
+						<a class="text-muted" href="#">Suporte</a>
+					</li> -->
+					<!-- <li class="list-inline-item">
+						<a class="text-muted" href="#">Central de Ajuda</a>
+					</li> -->
+					<!-- <li class="list-inline-item">
+						<a class="text-muted" href="#">Políticas de Privacidade</a>
+					</li> -->
+					<!-- <li class="list-inline-item">
+						<a class="text-muted" href="#">Termos de consentimento</a>
+					</li> -->
+				</ul>
+			</div>
+			<div class="col-5 text-end">
+				<ul class="list-inline mb-0">
+					<!-- <li class="list-inline-item">&copy; 2015</li> -->
+					<li class="list-inline-item">
+						<a href='/'><img class="d-xl-inline d-none" src="https://www.centraldaescola.com.br/assets/images/logo-header.png" height="24" /><img class="d-inline-block d-xl-none" src="https://www.centraldaescola.com.br/assets/images/logo-header-sm.png" height="24" /></a>
+					</li>
+					<li class="list-inline-item">
+						<img src="https://www.centraldaescola.com.br/assets/images/logon-footer.png" />
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>	<!-- /Footer -->
+
+	<!-- JS -->
+
+	<!-- Bootstrap -->
+	<script src="https://www.centraldaescola.com.br/assets/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+	<!-- Jasny Bootstrap -->
+	<!-- <script type="text/javascript" src="https://www.centraldaescola.com.br/assets/jasny-bootstrap/js/jasny-bootstrap.min.js"></script> -->
+	<!-- JQuery -->
+	<script src="https://www.centraldaescola.com.br/assets/jQuery-3.7.1/jquery-3.7.1.min.js"></script>
+	<!-- MomentJS -->
+	<script src="https://www.centraldaescola.com.br/assets/MomentJS/2.30.1/moment.min.js"></script>
+	<script src="https://www.centraldaescola.com.br/assets/MomentJS/2.30.1/moment-with-locales.min.js"></script>
+	<!-- DataTable -->
+	<script src="https://www.centraldaescola.com.br/assets/datatables/v2.1.3/datatables.min.js"></script>
+	<script src="https://www.centraldaescola.com.br/assets/datatables/v2.1.3/plugins/datetime-moment.js"></script>
+	<!-- Toastr -->
+	<script src="https://www.centraldaescola.com.br/assets/Toastr/toastr.min.js"></script>
+	<!-- Select2 -->
+	<script src="https://www.centraldaescola.com.br/assets/select2/4.1.0/js/select2.full.min.js"></script>
+	<script src="https://www.centraldaescola.com.br/assets/select2/4.1.0/js/i18n/pt-BR.js"></script>
+	<!-- Clipboard JS -->
+	<script src="https://www.centraldaescola.com.br/assets/clipboardjs/clipboard.min.js"></script>
+
+	<!-- JS Customs -->
+	<script>
+		const baseUrl = "https://www.centraldaescola.com.br/";
+		const _systempath = 'https://www.centraldaescola.com.br/';
+		const modulo = '';
+		var dToastr = ``;
+	</script>
+	<script src="https://www.centraldaescola.com.br/assets/js/functions.js?v=1732849949"></script>
+	<script src="https://www.centraldaescola.com.br/assets/js/script.js?v=1788976833"></script>
+
+	
+	<!-- /JS -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"d9d41a3345294d7e8d44308a6fd5902e","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
